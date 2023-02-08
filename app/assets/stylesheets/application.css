@@ -19,6 +19,7 @@
   box-sizing: border-box;
 }
 
+/*top*/
 .top-page {
   margin: 30px;
 }
@@ -31,6 +32,7 @@
   margin: 30px;
 }
 
+/*index*/
 .index-book {
   margin: 30px;
 }
@@ -39,26 +41,32 @@
   margin: 15px 0;
 }
 
-.title {
-  width: 200px;
+td {
+  padding: 0 5px 10px;
 }
 
-.body {
-  width: 350px;
+.new-book > h2 {
+  margin: 15px 0;
 }
 
-.action {
-  width: 150px;
+.new {
+  margin-top: 10px;
 }
 
+/*show*/
 .show-book {
   margin: 30px;
 }
 
-.show-book  > p {
+.show-book > p {
   margin: 30px;
 }
 
+/*edit*/
 .edit-book {
   margin: 30px;
+}
+
+.edit {
+  margin-top: 10px;
 }
