@@ -22,7 +22,16 @@
   </table>
 
   <div class="new-book">
-    <h2>New book</h2>
+    <h2 class="new-title">New book</h2>
+    <% if @book.errors.any? %>
+      <h2 class="error-message"><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+      <ul class="error-list">
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
     <%= form_with model: @book, url: '/books', method: :post do |f| %>
 
       <p>Title</p>

@@ -45,7 +45,7 @@ td {
   padding: 0 5px 10px;
 }
 
-.new-book > h2 {
+.new-title {
   margin: 15px 0;
 }
 
@@ -54,6 +54,10 @@ td {
 }
 
 /*show*/
+.flash {
+  color: #008000;
+}
+
 .show-book {
   margin: 30px;
 }
@@ -69,4 +73,23 @@ td {
 
 .edit {
   margin-top: 10px;
+}
+
+/*index&edit*/
+.error-message {
+  padding: 5px 5px 5px 15px;
+  font-size: 18px;
+  color: white;
+  background-color: #cc0000;
+  border-top: solid red;
+  border-right: solid red;
+  border-left: solid red;
+}
+
+.error-list {
+  padding: 30px 30px 30px 70px;
+  background-color: #f0f0f0;
+  border-right: solid red;
+  border-bottom: solid red;
+  border-left: solid red;
 }
